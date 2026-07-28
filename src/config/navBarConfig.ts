@@ -34,7 +34,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	});
 
 	//社交及其子菜单
-	links.push({
+	/*links.push({
 		name: "社交",
 		url: "#",
 		icon: "material-symbols:group",
@@ -45,7 +45,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 留言
 			LinkPresets.Guestbook,
 		],
-	});
+	});*/
 
 	// 我的及其子菜单
 	links.push({
@@ -54,13 +54,13 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "material-symbols:person",
 		children: [
 			// 动态
-			LinkPresets.Dynamic,
+			//LinkPresets.Dynamic,
 
 			// 相册
 			LinkPresets.Gallery,
 
 			// 追番
-			LinkPresets.Anime,
+			//LinkPresets.Anime,
 
 			// 番组计划
 			LinkPresets.Bangumi,
@@ -74,15 +74,16 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "material-symbols:info",
 		children: [
 			// 打赏
-			LinkPresets.Sponsor,
-
+			//LinkPresets.Sponsor,
+			// 友链
+			LinkPresets.Friends,
 			// 关于页面
 			LinkPresets.About,
 		],
 	});
 
 	// 自定义导航栏链接
-	links.push({
+	/*links.push({
 		name: "链接",
 		url: "#",
 		icon: "material-symbols:link",
@@ -113,7 +114,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "material-symbols:docs",
 			},
 		],
-	});
+	});*/
 
 	// 文档链接
 	// links.push({
@@ -181,7 +182,7 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		pageKey: "guestbook",
 	},
 	About: {
-		name: "关于我",
+		name: "关于",
 		url: "/about/",
 		icon: "material-symbols:person",
 	},

@@ -1,6 +1,7 @@
 # 关于我 / About Me
 
-你好！我是 **夏叶** ，一个在数字世界中默默无闻的一片叶子。
+你好！我是 **橘贝Jimmy**
+::github{repo="GJMJimmy/Firefly"}
 
 ## 🛠️ 关于本站
 
@@ -10,8 +11,6 @@
 
 
 **🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
-
-**🏠我的博客： [https://blog.cuteleaf.cn](https://blog.cuteleaf.cn/)**
 
 **📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
 

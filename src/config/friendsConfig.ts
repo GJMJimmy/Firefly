@@ -11,7 +11,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 	description: "",
 
 	// 是否显示底部自定义内容（friends.mdx 中的内容）
-	showCustomContent: true,
+	showCustomContent: false,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
 	showComment: true,
@@ -28,7 +28,7 @@ export const friendsConfig: FriendLink[] = [
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
 		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
 		siteurl: "https://blog.cuteleaf.cn",
-		tags: ["Blog"],
+		tags: ["个人博客"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
@@ -37,18 +37,45 @@ export const friendsConfig: FriendLink[] = [
 		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
 		desc: "Firefly主题模板文档",
 		siteurl: "https://docs-firefly.cuteleaf.cn",
-		tags: ["Docs"],
+		tags: ["官方文档","使用手册"],
 		weight: 9,
 		enabled: true,
 	},
 	{
-		title: "Astro",
-		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
-		desc: "The web framework for content-driven websites. ⭐️ Star to support our work!",
-		siteurl: "https://github.com/withastro/astro",
-		tags: ["Framework"],
-		weight: 8,
+		title: "宁宁云",
+		imgurl: "https://nnyunidc.com/themes/web/nnyun-web/assets/img/favicon.ico",
+		desc: "一个小云服务商，质量还行，一分钱一分货",
+		siteurl: "https://nnyunidc.com/",
+		tags: ["IDC"],
 		enabled: true,
+		weight: 0
+	},
+	{
+		title: "海参云",
+		imgurl: "https://monesy.net/themes/web/yunyoo/assets/img/logo/LOGO.png",
+		desc: "一个纯对接的云服务商，总感觉不太靠谱",
+		siteurl: "https://monesy.net/",
+		tags: ["IDC"],
+		enabled: true,
+		weight: 0
+	},
+	{
+		title: "昆明湖的博客",
+		imgurl: "https://congyu.de/assets/images/avatar.webp",
+		desc: "一个柚子厨的博客站",
+		siteurl: "https://congyu.de/",
+		tags: ["个人博客"],
+		enabled: true,
+		weight: 1
+	},
+	{
+		title: "ZYX-blog",
+		imgurl: "https://zyx-blog.top/_astro/mmexport1754374724013.Cgj7ciy1_Z20JtsY.webp",
+		desc: "一位Arch大佬及命令行爱好者的博客站",
+		siteurl: "https://zyx-blog.top/",
+		tags: ["个人博客"],
+		enabled: true,
+		weight: 1
 	},
 ];
 

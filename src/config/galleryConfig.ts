@@ -15,7 +15,7 @@ export const galleryConfig: GalleryConfig = {
 		// password: 访问密码，设置后需要输入密码才能查看相册内容（可选）
 		// passwordHint: 密码提示，设置后在输入密码错误时显示（可选，需配合password使用）
 		// 每添加一个数组项就相当于添加了一个相册，记得在 public/gallery/ 目录下创建对应的子目录并放入图片
-		{
+		/*{
 			id: "firefly-2026",
 			name: "可爱流萤",
 			description: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
@@ -33,6 +33,36 @@ export const galleryConfig: GalleryConfig = {
 			tags: ["加密相册", "示例"],
 			password: "123456",
 			passwordHint: "示例密码123456",
+		},*/
+		{
+			id: "东方-Chinnpi",
+			name: "东方•图集I",
+			description: "作者：b站up主@Chinppi",
+			tags: ["东方project", "水彩风"],
+		},
+		{
+			id: "东方-古明地板子",
+			name: "东方•图集II",
+			description: "作者：b站up主/P站@古明地板子",
+			tags: ["东方project", "可爱"],
+		},
+		{
+			id: "东方-申必人",
+			name: "东方•图集III",
+			description: "作者：b站up主/P站@申必人",
+			tags: ["东方project", "可爱", "涩气"],
+		},
+		{
+			id: "空之境界",
+			name: "空之境界",
+			description: "《空之境界》的官图和p站同人图",
+			tags: ["空之境界", "型月"],
+		},
+		{
+			id: "鸣潮-鲸雾mist",
+			name: "鸣潮•图集I",
+			description: "作者：b站up主@鲸雾mist",
+			tags: ["鸣潮"],
 		},
 	],
 
