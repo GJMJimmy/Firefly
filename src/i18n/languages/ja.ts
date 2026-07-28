@@ -77,6 +77,9 @@ export const ja: Translation = {
 		"ここは私の友達です、お互いに訪問して交流することを歓迎します",
 	[Key.searchFriends]: "友達を検索...",
 	[Key.friendsEmpty]: "まだ友達がいません",
+	[Key.devices]: "デバイス",
+	[Key.devicesSubtitle]: "日常的に使用しているデバイスを紹介",
+	[Key.devicesViewDetails]: "詳細を表示",
 	[Key.guestbook]: "ゲストブック",
 	[Key.guestbookDescription]:
 		"ここに足跡を残して、あなたの考えや提案を共有してください",

@@ -1,0 +1,40 @@
+---
+import DeviceGrid from "@components/pages/devices/DeviceGrid.svelte";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { siteConfig } from "@/config";
+import { devicesData } from "@/data/devices";
+import I18nKey from "@/i18n/i18nKey";
+import { i18n } from "@/i18n/translation";
+
+if (!siteConfig.pages.devices) {
+	return Astro.redirect("/404/");
+}
+
+const title = i18n(I18nKey.devices);
+const description = i18n(I18nKey.devicesSubtitle);
+const emptyText = i18n(I18nKey.noData);
+const viewDetailsText = i18n(I18nKey.devicesViewDetails);
+---
+
+<MainGridLayout title={title} description={description}>
+	<div class="relative flex w-full overflow-hidden rounded-(--radius-large)">
+		<section class="card-base z-10 w-full px-6 py-6 sm:px-9 sm:py-8" aria-labelledby="devices-title">
+			<header class="mb-8">
+				<h1 id="devices-title" class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">
+					{title}
+				</h1>
+				<p class="mt-2 text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
+					{description}
+				</p>
+			</header>
+
+			<DeviceGrid
+				client:load
+				devices={devicesData}
+				emptyText={emptyText}
+				pageTitle={title}
+				viewDetailsText={viewDetailsText}
+			/>
+		</section>
+	</div>
+</MainGridLayout>

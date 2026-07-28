@@ -77,6 +77,9 @@ export const ko: Translation = {
 		"여기는 제 친구들입니다. 방문하여 서로 교류해 보세요",
 	[Key.searchFriends]: "친구 검색...",
 	[Key.friendsEmpty]: "아직 친구가 없습니다.",
+	[Key.devices]: "내 기기",
+	[Key.devicesSubtitle]: "제가 일상적으로 사용하는 다양한 기기를 소개합니다",
+	[Key.devicesViewDetails]: "자세히 보기",
 	[Key.guestbook]: "방명록",
 	[Key.guestbookDescription]:
 		"이곳에 흔적을 남기고 생각과 제안을 공유해 주세요",

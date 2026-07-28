@@ -59,6 +59,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 相册
 			LinkPresets.Gallery,
 
+			// 设备
+			LinkPresets.Devices,
+
 			// 追番
 			//LinkPresets.Anime,
 
@@ -197,6 +200,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/gallery/",
 		icon: "material-symbols:photo-library",
 		pageKey: "gallery",
+	},
+	Devices: {
+		name: "设备",
+		url: "/devices/",
+		icon: "material-symbols:devices",
+		pageKey: "devices",
 	},
 	Anime: {
 		name: "追番",

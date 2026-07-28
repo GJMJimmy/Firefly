@@ -111,6 +111,8 @@ export const siteConfig: SiteConfig = {
 		anime: false,
 		// 动态页面开关
 		dynamic: false,
+		// 设备页面开关
+		devices: true,
 	},
 
 	// 分类导航栏开关，在首页和归档页顶部显示分类快捷导航

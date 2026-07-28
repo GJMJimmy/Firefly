@@ -77,6 +77,9 @@ export const en: Translation = {
 		"Here are my friends, welcome to visit and communicate with each other",
 	[Key.searchFriends]: "Search friends...",
 	[Key.friendsEmpty]: "No friends yet.",
+	[Key.devices]: "My Devices",
+	[Key.devicesSubtitle]: "Here are the devices I use in my daily life",
+	[Key.devicesViewDetails]: "View Details",
 	[Key.guestbook]: "Guestbook",
 	[Key.guestbookDescription]:
 		"Welcome to leave your mark here, share your thoughts and suggestions",
