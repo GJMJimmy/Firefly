@@ -462,9 +462,23 @@ const viewConfigStr = JSON.stringify({
 		cleaned = true;
 		eventHandlers.forEach(function (entry) { window.removeEventListener(entry[0], entry[1]); });
 		window.clearTimeout(scrollTimer);
-		document.removeEventListener("astro:before-swap", cleanup);
 	}
-	document.addEventListener("astro:before-swap", cleanup, { once: true });
+
+	// The floating controls persist through Swup navigations. Clean up only when this
+	// particular island leaves the DOM, otherwise it would stop receiving fm:* events.
+	var observer = new MutationObserver(function (mutations) {
+		for (var i = 0; i < mutations.length; i++) {
+			var removedNodes = mutations[i].removedNodes;
+			for (var j = 0; j < removedNodes.length; j++) {
+				if (removedNodes[j] === root || (removedNodes[j].contains && removedNodes[j].contains(root))) {
+					cleanup();
+					observer.disconnect();
+					return;
+				}
+			}
+		}
+	});
+	if (root.parentNode) observer.observe(root.parentNode, { childList: true });
 
 	var currentState = mgr.getState();
 	if (currentState.initialized) syncAll();
