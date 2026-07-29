@@ -1,5 +1,7 @@
 ---
 import type { MarkdownHeading } from "astro";
+import FloatingMusicPlayer from "@/components/features/FloatingMusicPlayer.astro";
+import { musicPlayerConfig } from "@/config/musicConfig";
 import BackToComment from "./BackToComment.astro";
 import BackToHome from "./BackToHome.astro";
 import BackToTop from "./BackToTop.astro";
@@ -14,6 +16,7 @@ const { headings, encrypted } = Astro.props;
 ---
 
 <div class="floating-controls-container">
+  {musicPlayerConfig.showFloatingPlayer !== false && <FloatingMusicPlayer />}
   <FloatingTOC headings={headings ?? []} encrypted={encrypted} />
   <BackToComment />
   <BackToHome />
