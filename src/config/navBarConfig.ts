@@ -78,10 +78,10 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		children: [
 			// 打赏
 			//LinkPresets.Sponsor,
-			// 友链
-			LinkPresets.Friends,
 			// 关于页面
 			LinkPresets.About,
+			// 友链
+			LinkPresets.Friends,
 		],
 	});
 
