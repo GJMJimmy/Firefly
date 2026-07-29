@@ -510,7 +510,7 @@ const viewConfigStr = JSON.stringify({
 
 	.floating-music-player[data-view="expanded"] {
 		width: var(--panel-width);
-		height: 17.25rem;
+		height: 14.5rem;
 	}
 
 	.floating-music-player[data-view="expanded"][data-drawer="lyrics"],
@@ -561,7 +561,7 @@ const viewConfigStr = JSON.stringify({
 
 	.floating-panel {
 		border: 1px solid color-mix(in oklab, var(--line-divider) 72%, transparent);
-		border-radius: 0.5rem;
+		border-radius: var(--radius-large);
 		background: color-mix(in oklab, var(--float-panel-bg) 92%, transparent);
 		box-shadow: 0 1rem 2.75rem rgb(0 0 0 / 18%);
 		backdrop-filter: blur(18px) saturate(1.15);
