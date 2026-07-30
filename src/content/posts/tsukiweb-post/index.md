@@ -62,7 +62,7 @@ image: ./cover.webp
 图省事直接复制下面的也行
 
 注：`--recursive`参数用于将子模块一并下载
-```
+```bash
  git clone --recursive https://github.com/requinDr/tsukiweb-public.git
 ```
 ![](image/2.png)
@@ -85,13 +85,13 @@ image: ./cover.webp
 一直Next就行
 ![](image/10.png)
 安装好后在命令行输入
-```
+```bash
 npm -v
 ```
 显示版本就成功了
 ## 2、安装依赖
 在CMD里进入项目根目录，输入：
-```
+```bash
 npm install
 ```
 ![](image/11.png)
@@ -104,14 +104,11 @@ npm install
 ![](image/12.png)
 注：该代码块的作用是将所有获取游戏文件的链接从本地替换成项目作者的网站，以便在没有添加游戏内容时游玩，但我们要本地部署，所以删掉该代码块
 ## 2、添加游戏文本
-先下载该链接的文件`fullscript_jp.txt`
-```
-https://tsukiweb.holofield.fr/static/jp/fullscript_jp.txt
-```
-可以用浏览器打开后按Ctrl+s保存，也可以直接用idm之类的下载器下载\
+先下载该缺失的原版日语文件`fullscript_jp.txt`\
+<a href="https://tsukiweb.holofield.fr/static/jp/fullscript_jp.txt" download>https://tsukiweb.holofield.fr/static/jp/fullscript_jp.txt</a>\
 下载后将文件移动至`根目录/public/static/jp`中\
 在CMD中进入`根目录/tools/convert-scripts`，输入指令回车：
-```
+```bash
 node index.js
 ```
 ![](image/13.png)
@@ -147,11 +144,11 @@ node index.js
 
 在Waifu2x-caffe根目录下打开CMD，输入以下指令：\
 有独显用独显跑：
-```
+```bash
 waifu2x-caffe-cui.exe -i "input" -o "input_x2" -m noise_scale -n 0 -s 2 -b 8 -p cudnn -model_dir models-cunet
 ```
 没独显用CPU跑：
-```
+```bash
 waifu2x-caffe-cui.exe -i "input" -o "input_x2" -m noise_scale -n 0 -s 2 -b 8 -p cpu
 ```
 
@@ -173,7 +170,7 @@ PS2:时隔两个月后的博主换了5060笔记本，只用不到5分钟就好�
 原版音乐已在原版月姬根目录名为bgm的文件夹中，EVERAFTER和月箱的音乐请自行寻找(可以在这个[音乐网站](https://downloads.khinsider.com/game-soundtracks/album/ever-after-music-from-tsukime-reproduction)下载)，我个人非常推荐使用`EVERAFTER`的音乐\
 进入音乐文件所在目录，创建一个后缀为`.txt`的文本文件，名字任意\
 加入以下内容：
-```
+```bash
 @echo off
 setlocal enabledelayedexpansion
 for %%f in (*.flac *.ogg *.wav *.mp3 *.ape) do (
@@ -200,7 +197,7 @@ ps：不知道你们累了没有，博主已经写累了。。。
 
 # 三、编译
 在tsukiweb项目的根目录下打开CMD，输入一下指令：
-```
+```bash
 npm run build
 ```
 等待完成即可\

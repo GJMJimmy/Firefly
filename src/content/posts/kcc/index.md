@@ -72,7 +72,7 @@ Kindle Comic Creator 是亚马逊推出的一款将漫画转换为电子书的�
 把`<navMap>`标签内的内容全删掉
 ![](image/17.png)
 然后在`<navMap>`标签内按照以下格式添加目录
-```
+```bash
 <navPoint playOrder="x" id="toc-x">
 	<navLabel>
 		<text>目录名</text>
@@ -100,7 +100,7 @@ Kindle Previewer会自动开始编译目录，等待完成即可
 编译出来的mobi文件内含源文件存档，如果是个人使用，而不是上传发布到 KDP（Kindle出版服务）包含一份源文件是没有必要的，属于冗余文件。\
 我们可以使用python脚本精简压缩mobi文件的体积：<a href="/files/kindlestrip_v136.py" download="kindlestrip_v136.py">点击下载</a>\
 **此脚本只能用python2执行，python3会报错**
-```
+```bash
 py -2 kindlestrip_v136.py <待转换的输入文件路径> <输出文件路径>
 ```
 可以看到，文件大小减少了一半左右

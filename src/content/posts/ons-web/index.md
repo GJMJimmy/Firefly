@@ -62,7 +62,7 @@ Onscripter引擎的最初设计目的就是为了方便跨平台移植用NScript
 在文件路径栏输入`cmd`，然后回车，会出现命令行窗口。
 ![](image/8.png)
 在命令行窗口中输入
-```
+```bash
 py onsyuri_index.py
 ```
 然后回车。
@@ -93,7 +93,7 @@ py onsyuri_index.py
 也可以将文件夹压缩成压缩包上传并部署至CloudflarePages、Vercel等无服务器平台。
 
 如果嫌麻烦，想在本地快速游玩，可以在刚刚的命令行窗口中输入：
-```
+```bash
 py -m http.server
 ```
 启动网页服务后，然后在浏览器输入`http://127.0.0.1:8000`或`http://localhost:8000`游玩

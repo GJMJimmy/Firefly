@@ -44,13 +44,13 @@ image: ./cover.webp
 ![](image/6.jpg)
 ## 2.twrp
 ①如果rec不会被官方覆盖，直接刷入twrp
-```
+```bash
 fastboot flash recovery "twrp.img文件路径"
 ```
 刷入后长按音量上键和电源键进入recovery\
 \
 ②如果rec会被官方覆盖，则临时启动twrp
-```
+```bash
 fastboot boot "twrp.img文件路径"
 ```
 ## 3.清除数据
@@ -70,7 +70,7 @@ fastboot boot "twrp.img文件路径"
 清除缓存后开始侧载
 ![](./image/4.webp)
 电脑用数据线连接手机后,执行命令：
-```
+```bash
 adb sideload "卡刷包文件路径"
 ```
 等待进度条完成即可
@@ -83,11 +83,11 @@ adb sideload "卡刷包文件路径"
 ![](image/8.png)
 ![](image/9.png)
 长按音量下键和电源键进入fastboot，执行命令刷写boot分区：
-```
+```bash
 fastboot flash boot "修补boot.img文件路径"
 ```
 如果有init_boot则刷写init_boot分区：
-```
+```bash
 fastboot flash init_boot "修补init_boot.img文件路径"
 ```
 ## 2.安装LSPosed
