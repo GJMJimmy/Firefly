@@ -37,7 +37,7 @@ image: ./cover.webp
 ②确认USB驱动正常
 
 谷歌从Android10开始引入了动态分区，所以从老系统升到高版本需要使用同时兼容动态分区和静态分区的twrp。\
-我在这里提供一个mi9的twrp：<a href="https://raw.githubusercontent.com/GJMJimmy/Mizuki/refs/heads/master/public/files/TWRP-3.7.1_12-Unified-cepheus-20260204（合并动态分区和静态分区支持）.7z" download="TWRP-3.7.1_12-Unified-cepheus-20260204（合并动态分区和静态分区支持）.7z">点击下载</a>
+我在这里提供一个mi9的twrp：<a href="https://raw.githubusercontent.com/GJMJimmy/Firefly/refs/heads/master/public/files/TWRP-3.7.1_12-Unified-cepheus-20260204（合并动态分区和静态分区支持）.7z" download="TWRP-3.7.1_12-Unified-cepheus-20260204（合并动态分区和静态分区支持）.7z">点击下载</a>
 
 # 二、开刷
 ## 1.长按音量下键和电源键进入fastboot

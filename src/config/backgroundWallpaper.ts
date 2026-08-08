@@ -84,12 +84,14 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"Ciallo～(∠・ω< )⌒☆",
+				"生年不满百，常怀千岁忧。昼短苦夜长，何不秉烛游！",
+				"千秋万岁后，谁知荣与辱？但恨在世时，饮酒不得足。",
+				"悟已往之不谏，知来者之可追",
+				"幽幽山谷流长，披风静谧而待。",
+				"一死生为虚诞，齐彭殇为妄作",
+				"朽骨在此相迎，山谷依然，只为静候新生。",
+				"蜡屐登山真率饮，筇杖穿林自在行。",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",

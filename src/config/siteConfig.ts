@@ -196,7 +196,7 @@ export const siteConfig: SiteConfig = {
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
-		mode: "static",
+		mode: "dynamic",
 		// Bangumi API 地址
 		apiUrl: "https://bgmapi.anibt.net",
 		// 详情页地址
@@ -207,7 +207,7 @@ export const siteConfig: SiteConfig = {
 		categoryOrder: ["anime","game","book"],
 		// 控制各分类的启用状态（true/false），未指定的分类默认启用
 		categories: {
-		 	music: false, // 禁用游戏分类显示
+		 	music: false, // 禁用音乐分类显示
 		},
 	},
 
