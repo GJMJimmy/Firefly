@@ -6,7 +6,7 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "橘贝Blog",
+	title: "橘贝Jimmy的博客",
 
 	// 站点副标题
 	//subtitle: "Demo site",

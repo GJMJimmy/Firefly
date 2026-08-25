@@ -108,6 +108,20 @@ export const devicesData: DeviceCategory = {
 			description: "性价比高，麦还不错，给手机用刚刚好",
 			link: "https://moondroplab.com/cn/products/chu-ii",
 		},
+		{
+			name: "荣耀亲选LCHSE",
+			image: "/images/device/lchse.jpg",
+			specs: "星耀黑 / 耳夹式",
+			description: "质感轻巧，佩戴舒适",
+			link: "https://www.honor.com/cn/honor-choice/lchse-clip-on-earbuds/",
+		},
+		{
+			name: "原道 OriG in",
+			image: "/images/device/origin.jpg",
+			specs: "银青色",
+			description: "早知道，还是原道😭",
+			link: "https://nicehck.cn/#menu-new_releases",
+		},
 	],
 	路由器: [
 		{
