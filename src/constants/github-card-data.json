@@ -5,10 +5,34 @@
 		"avatarUrl": "https://avatars.githubusercontent.com/u/43440669?v=4",
 		"license": "MIT"
 	},
+	"gjmjimmy/firefly": {
+		"description": "清新美观的 Astro 静态博客主题模板",
+		"language": "Astro",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/176757936?v=4",
+		"license": "MIT"
+	},
+	"requindr/tsukiweb-public": {
+		"description": "Porting Tsukihime to the web to make it accessible on different devices with QoL improvements",
+		"language": "KerboScript",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/75610214?v=4",
+		"license": null
+	},
 	"saicaca/fuwari": {
 		"description": "✨A static blog template built with Astro. ",
 		"language": "Astro",
 		"avatarUrl": "https://avatars.githubusercontent.com/u/25200299?v=4",
 		"license": "MIT"
+	},
+	"xhyeax/softaphelper": {
+		"description": "SoftAp static server IP(v4) for Android 9+; SoftAp type hide for Android 10+; SoftAp 5G channel and bandwidth lock for Android 13+ (Xposed) ",
+		"language": "Java",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/16201640?v=4",
+		"license": "MIT"
+	},
+	"yurisizuku/onscripteryuri": {
+		"description": "An enhancement ONScripter project porting to many platforms, especially web. ",
+		"language": "C++",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/15275959?v=4",
+		"license": "GPL-2.0"
 	}
 }

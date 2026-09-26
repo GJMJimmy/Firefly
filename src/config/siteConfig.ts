@@ -47,7 +47,7 @@ export const siteConfig: SiteConfig = {
 	title: "橘贝Jimmy的博客",
 
 	// 站点副标题
-	//subtitle: "Demo site",
+	subtitle: "",
 
 	// 站点 URL
 	site_url: "https://blog.gbjimmy.com",
