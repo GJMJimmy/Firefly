@@ -25,7 +25,7 @@ draft: false
 # 一、Root临时修改法
 打开MT管理器、Termux或类似的终端\
 输入`su`获取root权限，否则修改时会提示“Permission denied”\
-输入指令查看无线接口信息，确认热点对应的网卡名字，通常是`wlan2`
+输入指令查看无线接口信息，确认热点对应的网卡名字，通常是`wlan+数字`
 ```bash
 iw dev
 ```
@@ -84,22 +84,16 @@ ifconfig wlan2 192.168.137.152
 **注：Tethering可能勾选失败，输入正常现象，忽略即可**
 ## 3、实现原理
 Android开启热点大致流程为：
+```mermaid
+flowchart
+    A[打开 Wi-Fi 热点] --> B[Tethering]
+    B --> C[创建热点接口 wlan2]
+    C --> D[IpServer]
+    D --> E[为 wlan0 分配 IPv4 地址]
+    E --> F[启动 DHCP Server]
+    F --> G[IP：192.168.x.x<br>网关：192.168.x.1<br>a]
 ```
-	打开 Wi-Fi 热点
-        ↓
-	Tethering
-        ↓
-	创建热点接口wlan2
-        ↓
-	IpServer
-        ↓
-	为 wlan0 分配 IPv4 地址
-        ↓
-	启动 DHCP Server
-        ↓
-	IP：192.168.x.x
-	网关：192.168.x.1
-```
+
 该模块在`为wlan0分配IPv4地址`这一步做Hook，把系统原本随机生成的地址替换成固定地址
 ### ①Android 9-10
 安卓9和10的Hook点均为
@@ -109,25 +103,22 @@ private String getRandomWifiIPv4Address()
 ```
 虽然所在类有所不同\
 安卓9：
-```
+```java
 com.android.server.connectivity.tethering.TetherInterfaceStateMachine
     └── getRandomWifiIPv4Address()
 ```
 安卓10：
-```
+```java
 android.net.ip.IpServer
     └── getRandomWifiIPv4Address()
 
 ```
 但大体思路相同
-```
-	SoftApHelper
-        ↓
-	Xposed Hook
-        ↓
-	拦截 getRandomWifiIPv4Address()
-        ↓
-	直接返回固定地址
+```mermaid
+flowchart TD
+    A[SoftApHelper] --> B[Xposed Hook]
+    B --> C[`拦截 getRandomWifiIPv4Address()`]
+    C --> D[直接返回固定地址]
 ```
 ### ②Android 11
 安卓再次更改网络共享架构\
@@ -145,18 +136,11 @@ mInterfaceType == TETHERING_WIFI
 
 最后再进行替换\
 Hook流程大致如下：
-```
-	requestIpv4Address()
-        ↓
-	是否mInterfaceType == TETHERING_WIFI
-        ↓
-        是
-        ↓
-	调用栈里面是否有configureIPv4？
-        ↓
-        是
-        ↓
-    替换地址
+```mermaid
+flowchart TD
+    A[`requestIpv4Address()`] --> B[是否 mInterfaceType == TETHERING_WIFI]
+    B -->|是| C[调用栈里面是否有 configureIPv4？]
+    C -->|是| D[替换地址]
 ```
 ### ③Android 12-13
 函数名没变，增加了参数`boolean useLastAddress`

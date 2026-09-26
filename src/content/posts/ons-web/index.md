@@ -59,15 +59,14 @@ Onscripter引擎的最初设计目的就是为了方便跨平台移植用NScript
 
 下载好你要玩的Ons游戏，这里以ever17为例，直接将全部文件解压到OnsYuri的文件夹，不用做任何处理
 ![](image/6.png)
-在文件路径栏输入`cmd`，然后回车，会出现命令行窗口。
+在文件路径栏输入`cmd`，然后回车，会出现命令行窗口
 ![](image/8.png)
-在命令行窗口中输入
+在命令行窗口中输入指令后回车
 ```bash
 py onsyuri_index.py
 ```
-然后回车。
 ![](image/7.png)
-这样就已经完成了。
+这样就已经完成了
 
 ## 2、游戏解包(推荐)
 下载好你要玩的Ons游戏，这里以ever17为例，将全部文件解压到OnsYuri的文件夹
@@ -80,19 +79,24 @@ py onsyuri_index.py
 ![](image/11.png)
 点击Extract all，选择解压到OnsYuri的文件夹内(和刚刚选中的`.nsa`文件同目录)
 ![](image/12.png)
-这样游戏内容就已经提取出来了，可以将刚刚选中的`.nsa`文件删掉了。
+这样游戏内容就已经提取出来了，可以将刚刚选中的`.nsa`文件删掉了。\
 在文件路径栏输入`cmd`，然后回车，会出现命令行窗口。
 ![](image/8.png)
-在命令行窗口中输入`py onsyuri_index.py --lazyload`，然后回车。
+在命令行窗口中输入指令后回车
+```bash
+py onsyuri_index.py --lazyload
+```
 ![](image/13.png)
-这样就大功告成了。
+脚本会自动将所有游戏文件信息添加到`onsyuri_index.json`中
+这样就大功告成了
 
 # 三、启动游戏
 在宝塔面板/1Panel等面板中添加站点就可以游玩了。
 
 也可以将文件夹压缩成压缩包上传并部署至CloudflarePages、Vercel等无服务器平台。
 
-如果嫌麻烦，想在本地快速游玩，可以在刚刚的命令行窗口中输入：
+如果想在本地快速游玩，可以用`httpserver`启动网页服务\
+在刚刚的命令行窗口中输入：
 ```bash
 py -m http.server
 ```
