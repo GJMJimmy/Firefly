@@ -1,5 +1,5 @@
 ---
-title: 如何在网站上游玩Galgame？
+title: 如何在网站上游玩ONS版Galgame？
 published: 2026-01-03
 pinned: false
 description: 用OnscripterYuri部署web版ONS游戏
@@ -11,6 +11,8 @@ tags:
 category: 教程
 draft: false
 image: ./cover.png
+series: webGal
+seriesOrder: 1
 ---
 
 - [介绍](#介绍)

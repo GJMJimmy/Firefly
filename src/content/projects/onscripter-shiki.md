@@ -1,0 +1,63 @@
+---
+title: "OnscripterShiki"
+published: 2026-09-30
+draft: false
+description: "基于 OnscripterYuri二次开发，主要修复web端bug、优化web端体验。"
+image: "/src/content/posts/ons-shiki-intro/cover.jpg"
+status: "published"
+tags:
+  - C++
+  - Emscripten
+  - 视觉小说
+link:
+  - label: "GitHub"
+    icon: "fa7-brands:github"
+    value: "https://github.com/GJMJimmy/OnscripterShiki"
+---
+
+## 项目简介
+
+[OnscripterShiki](https://github.com/GJMJimmy/OnscripterShiki)是基于[OnscripterYuri](https://github.com/YuriSizuku/OnscripterYuri)二次开发的一个增强型 ONScripter 项目，主要修复web端bug、优化web端体验。
+
+::github{repo="GJMJimmy/OnscripterShiki"}
+
+web部署教程可以参考[OnscripterYuri](https://github.com/YuriSizuku/OnscripterYuri)的`README`或这篇博客<a href="/posts/ons-web/">如何在网站上游玩ONS版Galgame？</a>
+
+## 在原有基础上的修改
+
+### Bug修复
+
+- 修复虚拟按键`menu`、`skip`不起作用的问题
+- 修复 `em_import` 不返回 Promise 导致"恢复存档后一刷新就丢档"的问题
+
+### 新增功能
+
+- **云存档**：把 Emscripten 的存档目录打包成 zip 上传/下载，可以部署到服务器或worker
+
+- **界面美化**：增加可拖动悬浮球，单击打开/关闭菜单；菜单改为深色毛玻璃风格，可以自定义颜色和透明度 
+
+- **离线缓存**：可以选择一次性缓存全部资源，离线后也可游玩
+
+## 云存档使用教程
+
+
+### 服务器
+
+单存档 64MB 上限
+
+在服务器运行：
+```bash
+python onsyuri_sync_server.py //默认监听 8765 端口
+python onsyuri_sync_server.py --port [数字] //可以指定端口
+```
+
+### Worker
+见[ons_shiki_sync_worker_README.md](https://github.com/GJMJimmy/OnscripterShiki/blob/master/src/ons_shiki_web/ons_shiki_sync_worker_README.md "ons_shiki_sync_worker_README.md")
+
+### 部署好同步服务后
+  
+1. 打开菜单里的云同步面板，填入服务器地址和自定义的**存档码**
+
+2. **上传 / 恢复**：上传会把当前存档打包发到该存档码下；恢复则按存档码拉取 zip 并自动写回本地 IndexedDB，刷新即生效
+
+> 存档码就是身份凭证，请用不易被猜中的字符串。

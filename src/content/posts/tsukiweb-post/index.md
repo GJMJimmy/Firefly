@@ -12,6 +12,8 @@ tags:
 category: 教程
 draft: false
 image: ./cover.webp
+series: webGal
+seriesOrder: 3
 ---
 - [介绍](#介绍)
 - [一、下载项目](#一下载项目)
@@ -35,7 +37,7 @@ image: ./cover.webp
 # 介绍
 玩过老版月姬的应该都知道，老版月姬的的游玩体验非常难受，比如UI很老、没有流程图、存档功能简陋…… \
 \
-但我对老版月姬实在是感兴趣，最后我找到了一位法国月丑大神制作的[月姬网页版](https://tsukiweb.holofield.fr/)，他把整个游戏系统都重做了一遍，优点如下：
+但我对老版月姬实在是感兴趣，最后我找到了一位法国大神制作的[月姬网页版](https://tsukiweb.holofield.fr/)，他把整个游戏系统都重做了一遍，优点如下：
 -	1、加入了流程图、画廊、现代化的文本回放
 -	2、整合了PLUS-DISC的内容
 -	3、游戏音乐可以在原版、EVERAFTER、月箱这三版中自行选择

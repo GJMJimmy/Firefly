@@ -8,4 +8,6 @@ tags:
 category: example
 draft: true
 image: ./cover.webp
+series: "实例"
+seriesOrder: 1
 ---

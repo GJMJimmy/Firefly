@@ -6,6 +6,8 @@ tags:
   - 教程
 category: 教程
 draft: false
+series: "安卓"
+seriesOrder: 2
 ---
 - [介绍](#介绍)
 - [一、Root临时修改法](#一root临时修改法)

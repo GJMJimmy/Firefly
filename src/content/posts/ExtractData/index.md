@@ -9,6 +9,8 @@ tags:
 category: 教程
 draft: false
 image: ./cover.png
+series: webGal
+seriesOrder: 2
 ---
 Ons游戏的游戏资源如图片、音乐基本都加密保存在了后缀为`.nsa`的文件中\
 本文将教你如何简单的将其解压出来\

@@ -20,7 +20,7 @@ const pages = resolvePageToggles({
 	// 动态页面开关
 	dynamic: false,
 	// 项目展示页开关
-	projects: false,
+	projects: true,
 	// 相册页面开关
 	gallery: true,
 	// 书签导航页面开关
@@ -112,11 +112,7 @@ export const siteConfig: SiteConfig = {
 		// image 和 url 类型可额外设置 valueDark，用于暗色模式下显示另一张图片，不设置则亮暗色共用 value
 		// 例如: { type: "image", value: "assets/images/logo.png", valueDark: "assets/images/logo-dark.png", alt: "Logo" }
 		// 使用 Astro 图标库时不需要设置 valueDark，图标会自动跟随主题亮暗色切换
-		logo: {
-			type: "image",
-			value: "assets/home/home.png",
-			alt: "🍀",
-		},
+		logo: { type: "image", value: "/assets/home/home.png", alt: "Logo" },
 		// 导航栏标题
 		title: "橘贝Blog",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
@@ -287,7 +283,7 @@ export const siteConfig: SiteConfig = {
 			music: false, // 禁用音乐分类显示
 		},
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
-		nsfw: "hide",
+		nsfw: "off",
 	},
 
 	// ── VNDB配置 ──────────────────────────────────

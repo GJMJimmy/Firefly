@@ -9,6 +9,8 @@ tags:
 category: 教程
 draft: false
 image: ./cover.webp
+series: "安卓"
+seriesOrder: 1
 ---
 - [一、准备工作](#一准备工作)
 - [二、开刷](#二开刷)
